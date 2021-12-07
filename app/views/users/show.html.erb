@@ -15,9 +15,10 @@
     
 </p>
 <hr/>
-<h1>ホームページ</h1>
+<h1>プロファイル</h1>
+
 <p>
-    <% if user_signed_in? %>
-        <%= link_to "本一覧を見る", books_path%>
-    <% end %>
+    <strong>メールアドレス</strong>
+    <br>
+    <%= current_user.email %>
 </p>
